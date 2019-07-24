@@ -1,14 +1,26 @@
-# cypress-test-tiny
+[Cypress documentation is available here](https://docs.cypress.io/guides/overview/why-cypress.html).
 
-> Tiny Cypress E2E test case
+# Installation
 
-Build status | Description
-:--- | :---
-[![CircleCI](https://circleci.com/gh/cypress-io/cypress-test-tiny.svg?style=svg)](https://circleci.com/gh/cypress-io/cypress-test-tiny) | Linux & Mac
-[![Build status](https://ci.appveyor.com/api/projects/status/er7wpte7j00fsm8d/branch/master?svg=true)](https://ci.appveyor.com/project/cypress-io/cypress-test-tiny-fitqm/branch/master) | Windows 32-bit
-[![Build status](https://ci.appveyor.com/api/projects/status/bpwo4jpue61xsbi5/branch/master?svg=true)](https://ci.appveyor.com/project/cypress-io/cypress-test-tiny/branch/master) | Windows 64-bit
-[ ![Codeship Status for cypress-io/cypress-test-tiny](https://app.codeship.com/projects/98843020-d6d6-0135-402d-5207bc7a4d86/status?branch=master)](https://app.codeship.com/projects/263289) | Codeship Basic
+```javascript
+npm install
+```
 
-## Important
+# Run
 
-Note that this project **DOES NOT** include Cypress dependency in the [package.json](package.json). The reason for such omission is that we use this project to test every Cypress build and do not want to spend time installing `cypress@x.x.x` just to immediately install and test `cypress@y.y.y`. Which means when submitting pull requests with a bug report, please save the problematic version of Cypress in `package.json`. Simply run `npm install --save-dev cypress` or `npm i -D cypress@x.x.x` and commit the change before submitting a pull request.
+```javascript
+npm run cypress:open
+``` 
+
+# The Exercise
+
+Your assignment is to write a Test Plan & implement those tests using Cypress. 
+You should be testing DropdownTree component (will be visible when you run the Cypress command listed above) according to the following requirements:
+
+1. The component shows a tree that contains nodes. Some of them have children.
+2. You can only select one node.
+3. You can select all nodes in the tree, even ones with children.
+4. Expand/Collapse functionality is available when clicking on the arrow of the node which has children.
+5. When clicking on the label of a node with children, it will select it and not expand/collapse.
+6. Cancel should close the dropdown and perform no action.
+7. Clear button should clear the selection.

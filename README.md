@@ -26,3 +26,5 @@ You should be testing DropdownTree component (will be visible when you run the C
 5. When clicking on the label of a node with children, it will select it and not expand/collapse.
 6. Cancel should close the dropdown and perform no action.
 7. Clear button should clear the selection.
+
+Good luck!

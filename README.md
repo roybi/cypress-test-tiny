@@ -1,5 +1,7 @@
 [Cypress documentation is available here](https://docs.cypress.io/guides/overview/why-cypress.html).
 
+If you don't have it yet, make sure to [install npm](https://www.npmjs.com/get-npm).
+
 # Installation
 
 ```javascript
